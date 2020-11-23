@@ -1,0 +1,34 @@
+{
+  "name": "node-jobs",
+  "version": "1.0.0",
+  "description": "Run cron jobs with node.js",
+  "scripts": {
+    "lint": "eslint .",
+    "once": "node . --once --job",
+    "job": "node . --job",
+    "jobs": "node . ",
+    "jobs:watch": "node . --watch",
+    "start": "pm2 stop pm2.json && pm2 delete pm2.json && pm2 start pm2.json && pm2 show node-jobs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.ibm.com:OMTribe/node-jobs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/events-api": "2.3.2",
+    "@slack/web-api": "5.8.0",
+    "command-line-args": "5.1.1",
+    "cron": "1.8.2",
+    "cron-validator": "1.1.1",
+    "dotenv-safe": "~4",
+    "log4js": "~4",
+    "node-watch": "0.6.3",
+    "require-dir": "1.2.0",
+    "type-check": "0.4.0"
+  },
+  "devDependencies": {
+    "eslint": "~4"
+  }
+}

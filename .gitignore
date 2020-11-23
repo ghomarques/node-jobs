@@ -1,0 +1,20 @@
+# bloat
+.DS_Store
+npm-debug.log
+.idea
+
+# certificates
+*.pem
+*.key
+*.crt
+*.cer
+
+# environments
+*.env
+
+# VS code configs
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
