@@ -1,4 +1,4 @@
 {
-    "name" : "node-jobs",
-    "script" : "index.js"
+  "name": "node-jobs",
+  "script": "index.js"
 }

@@ -1,16 +1,16 @@
-module.exports = (logLevel = 'debug') => {
-    require('log4js').configure({
-        appenders: {
-            log: {
-                type: 'stdout',
-            },
-        },
-        categories: {
-            default: {
-                appenders: ['log'],
-                level: logLevel,
-            },
-        },
-        pm2: true,
-    });
+module.exports = (logLevel = "debug") => {
+  require("log4js").configure({
+    appenders: {
+      log: {
+        type: "stdout",
+      },
+    },
+    categories: {
+      default: {
+        appenders: ["log"],
+        level: logLevel,
+      },
+    },
+    pm2: true,
+  });
 };

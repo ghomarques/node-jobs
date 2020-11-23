@@ -8,7 +8,7 @@
     "job": "node . --job",
     "jobs": "node . ",
     "jobs:watch": "node . --watch",
-    "start": "pm2 stop pm2.json && pm2 delete pm2.json && pm2 start pm2.json && pm2 show node-jobs"
+    "start:pm2": "pm2 stop pm2.json && pm2 delete pm2.json && pm2 start pm2.json && pm2 show node-jobs"
   },
   "repository": {
     "type": "git",
