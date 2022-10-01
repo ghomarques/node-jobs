@@ -8,12 +8,8 @@
     "job": "node . --job",
     "jobs": "node . "
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.ibm.com:OMTribe/node-jobs.git"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "Guilherme Oka (ghomarques@gmail.com)",
+  "license": "MIT",
   "dependencies": {
     "command-line-args": "5.2.1",
     "cron": "1.8.2",
