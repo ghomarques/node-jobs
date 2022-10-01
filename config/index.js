@@ -18,15 +18,11 @@ const jobsPath = JSON.parse(process.env.JOBS_PATH);
 // persed cli options
 const cliOptions = require("./cli");
 
-// slack webhook token
-const slackConfig = require("./slack");
-
 module.exports = {
   isLocal,
   isDev,
   isQa,
   isProd,
   jobsPath,
-  cliOptions,
-  slackConfig,
+  cliOptions
 };

@@ -43,7 +43,6 @@ It must return a function that receives 3 params at cronJob onTick, (job, jobs, 
 
 ### todo
 
-- setup node-watcher for each path passed on jobsPath;
 - run detached for "npm run once", use "nohup &"?
 - create facets for all cronJob methods?
 - save job run statuses like run time, average, progress bar on CLI?

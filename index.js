@@ -1,5 +1,4 @@
 const { jobsPath, cliOptions, slackConfig } = require("./config");
-const watcher = require("./watcher");
 const loader = require("./loader");
 const { createJobs, clearAll } = require("./manager");
 const log4js = require("log4js");
@@ -16,7 +15,6 @@ const logger = log4js.getLogger("[node-jobs]");
       jobsPath,
       job,
       once,
-      watch,
     });
 
     // checks if 'job' is an array of job names
@@ -34,7 +32,7 @@ const logger = log4js.getLogger("[node-jobs]");
 
     // create an Job instance for each 'jobs' instance configuration
     const create = () => {
-      createJobs(jobs, slackConfig)
+      createJobs(jobs)
         .then((instances) => {
           logger.debug(
             "created jobs",
@@ -76,15 +74,6 @@ const logger = log4js.getLogger("[node-jobs]");
           logger.error("failed to create jobs", error);
         });
     };
-
-    // setup watcher
-    if (watch && !hasSpecificJob) {
-      const onChange = () => {
-        clearAll();
-        create();
-      };
-      logger.debug("setup watcher", onChange, watcher);
-    }
 
     create();
   } catch (error) {
