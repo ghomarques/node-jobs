@@ -1,8 +1,6 @@
-# bloat
-.DS_Store
 node_modules
-npm-debug.log
-.idea
+*.env
+*.log
 
 # certificates
 *.pem
@@ -10,12 +8,12 @@ npm-debug.log
 *.crt
 *.cer
 
-# environments
-*.env
-
 # VS code configs
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# OS specific
+.DS_Store
