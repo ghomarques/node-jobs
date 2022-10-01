@@ -15,10 +15,5 @@ module.exports = ((config) => {
     type: Boolean,
     name: "once",
     alias: "o",
-  },
-  {
-    type: Boolean,
-    name: "watch",
-    alias: "w",
-  },
+  }
 ]);

@@ -10,7 +10,6 @@ module.exports = (logLevel = "debug") => {
         appenders: ["log"],
         level: logLevel,
       },
-    },
-    pm2: true,
+    }
   });
 };
