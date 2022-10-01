@@ -6,9 +6,7 @@
     "lint": "eslint .",
     "once": "node . --once --job",
     "job": "node . --job",
-    "jobs": "node . ",
-    "jobs:watch": "node . --watch",
-    "start:pm2": "pm2 stop pm2.json && pm2 delete pm2.json && pm2 start pm2.json && pm2 show node-jobs"
+    "jobs": "node . "
   },
   "repository": {
     "type": "git",
@@ -22,7 +20,6 @@
     "cron-validator": "1.3.1",
     "dotenv-safe": "~4",
     "log4js": "~4",
-    "newrelic": "^7.5.2",
     "require-dir": "1.2.0",
     "type-check": "0.4.0"
   },
